@@ -1,6 +1,11 @@
 workspace_path: workspace
 scan_timeout_s: 20
 max_file_mb: 150
+
+# control how samples are handled
+copy_samples: false              # if false, scan files in-place (no copies)
+samples_subdir: "samples"        # used only when copy_samples: true
+
 profiles:
   fast:
     include_tags: ["core"]
@@ -9,5 +14,6 @@ profiles:
   custom:
     include_namespaces: []
     exclude_tags: []
+
 export_defaults:
   formats: ["json","md","html"]
