@@ -3,8 +3,8 @@ scan_timeout_s: 20
 max_file_mb: 150
 
 # control how samples are handled
-copy_samples: false              # if false, scan files in-place (no copies)
-samples_subdir: "samples"        # used only when copy_samples: true
+# copy_samples: false              # if false, scan files in-place (no copies)
+# samples_subdir: "samples"        # used only when copy_samples: true
 
 profiles:
   fast:
